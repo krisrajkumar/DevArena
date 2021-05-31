@@ -1,0 +1,2 @@
+rootProject.name = "HiltRetrofitApp"
+include ':app'
