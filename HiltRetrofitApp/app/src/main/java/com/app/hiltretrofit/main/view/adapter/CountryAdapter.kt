@@ -5,8 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.hiltretrofit.databinding.CountryItemBinding
 import com.app.hiltretrofit.main.Country
+import javax.inject.Inject
 
-class CountryAdapter : RecyclerView.Adapter<CountryAdapter.ViewHolder>() {
+class CountryAdapter @Inject constructor() : RecyclerView.Adapter<CountryAdapter.ViewHolder>() {
     var countries: List<Country> = emptyList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
